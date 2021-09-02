@@ -1,0 +1,9 @@
+/* common style */
+body{
+  text-transform: capitalize;
+}
+.custom-color{
+  color: orange;
+  margin-top: 10px;
+  
+}
