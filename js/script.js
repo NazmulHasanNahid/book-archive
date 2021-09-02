@@ -13,6 +13,7 @@ const searchText = () => {
 
 const displaySearchResult = books =>{
   const searchResult = document.getElementById('search-result');
+  searchResult.textContent ='';
   books.forEach(book =>{
     console.log(book);
     const div = document.createElement('div');
@@ -24,7 +25,7 @@ const displaySearchResult = books =>{
             <h5 class="card-title">Books name : ${book.title}</h5>
             <p class="card-text"> Author name : ${book.author_name} </p>
             <p>Publish Date: ${book.publish_date}</p>
-            <p>Title : ${book.title_suggest}</p>
+            
           </div>
         </div>
     
