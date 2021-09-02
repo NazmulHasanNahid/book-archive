@@ -1,9 +1,10 @@
 /* common style */
 body{
   text-transform: capitalize;
+  background-color: rgb(43, 84, 117);
 }
 .custom-color{
-  color: orange;
+  color:white;
   margin-top: 10px;
   
 }
