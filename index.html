@@ -1,40 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Assignment-6</title>
-  <!-- bootsrap file -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- custom css -->
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-search </title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootsrap file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
 </head>
 <body>
+  <section class="container">
+    <h2 class="text-center custom-color bg-green">Search your favorite book</h2>
 
-<section class="container">
-    <h1 class="text-center custom-color">Search Your Favourite Books</h1>
+     <!-- book search area -->
+  <div class="input-group mb-3 w-50 mx-auto">
+    <input id="input-search" type="text" class="form-control" placeholder="Search your book" aria-label="Recipient's username" aria-describedby="button-addon2">
+    <button onclick="searchBook()" class="btn btn-outline-secondary" type="button" id="button-search ">Search</button>
+   </div>
+<!-- total number -->
+  <div >
+    <h5 class="text-center" id="total-result"></h5>
+  </div>
 
-    <!-- search field -->
-    <div class="input-group mx-auto w-50 mt-3 mb-3">
-      <input id="search-field" type="text" class="form-control" placeholder="Search Books" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <button onclick="searchText()" class="btn btn-outline-secondary" type="button" id="button-search">search</button>
+<!---book search result--->
+    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
     </div>
-
-    <!-- search result -->
-    <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4  ">
-      
-    </div>
-
-</section>
-
-
-
-
-
-  <!-- js -->
+  </section>
+            <!-- js -->
   <script src="js/script.js"></script>
-  <!-- bootsrap file -->
+
+            <!-- bootsrap file -->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
