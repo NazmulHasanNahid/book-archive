@@ -1,15 +1,15 @@
-  const searchBook = () => {
+ //input-search
+ const searchBook = () => {
   const SearchField = document.getElementById("input-search");
   const searchText = SearchField.value;
-  //console.log(searchText);
   const url = `https://openlibrary.org/search.json?q=${searchText}`;
-  // console.log(url)
   fetch(url)
     .then(res => res.json())
     .then(data => displaySearchResult(data));
   SearchField.value = "";
  }
 
+//total result section
   const totalResult = document.getElementById('total-result');
 
   const displaySearchResult = books => {
@@ -20,6 +20,8 @@
     totalResult.style.margin = '20px 0px'
     
   }
+
+  //error handeling
   if (result === "0") {
     totalResult.innerText = `No result Found`
     color()
@@ -27,10 +29,10 @@
     totalResult.innerText = `Found : ${books.numFound}  Books`
     color()
   }
-  //console.log(docs);
+
+  //display books
   const searchResult = document.getElementById('search-result');
   const book = books.docs;
-
   searchResult.textContent = '';
   book.forEach(doc => {
     const div = document.createElement('div');
