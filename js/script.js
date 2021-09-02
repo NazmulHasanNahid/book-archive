@@ -11,9 +11,7 @@
 
 //total result section
   const totalResult = document.getElementById('total-result');
-
   const displaySearchResult = books => {
-
   const result = `${books.numFound}`
   function color(){
     totalResult.style.color='white'
