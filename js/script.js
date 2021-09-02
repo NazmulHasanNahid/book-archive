@@ -15,10 +15,17 @@
   const displaySearchResult = books => {
 
   const result = `${books.numFound}`
+  function color(){
+    totalResult.style.color='white'
+    totalResult.style.margin = '20px 0px'
+    
+  }
   if (result === "0") {
     totalResult.innerText = `No result Found`
+    color()
   } else {
     totalResult.innerText = `Found : ${books.numFound}  Books`
+    color()
   }
   //console.log(docs);
   const searchResult = document.getElementById('search-result');
