@@ -34,7 +34,7 @@
         <div class="card-body">
           <h5 class="card-title">${doc.title}</h5>
           <p class="card-text">Author name: ${doc.author_name}</p>
-          <p class="card-text"> publish : ${doc.publisher}</p>
+          <p class="card-text"> publisher : ${doc.publisher}</p>
           <p class="card-text">First publish year: ${doc.first_publish_year}</p>
       </div>
     </div>
